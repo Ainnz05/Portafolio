@@ -430,62 +430,59 @@
   }
 
 
-  /* PROJECTS */
-  #projects-section { background: var(--bg); }
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-  .project-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    padding: 1.6rem;
-    position: relative;
-    overflow: hidden;
-    transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
-  }
-  .project-card:hover {
-    border-color: var(--accent);
-    transform: translateY(-5px);
-    box-shadow: var(--glow);
-  }
-  .project-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--accent), var(--accent2), var(--accent3));
-  }
-  .project-icon { font-size: 1.8rem; margin-bottom: 1rem; }
-  .project-title {
-    font-family: 'Syne', sans-serif;
-    font-size: 1.05rem;
-    font-weight: 700;
-    color: var(--text);
-    margin-bottom: 0.7rem;
-  }
-  .project-desc {
-    color: var(--muted);
-    font-size: 0.92rem;
-    line-height: 1.65;
-    margin-bottom: 1rem;
-  }
-  .project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-    margin-bottom: 1.2rem;
-  }
-  .project-link {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    color: var(--accent);
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-  }
-  .project-link:hover { color: #fff; }
+  <!-- PROJECTS -->
+<section id="projects-section">
+  <div class="section-label">Proyectos</div>
+  <h2>Proyectos <em>destacados</em></h2>
+  <div class="projects-grid reveal">
+
+    <div class="project-card">
+      <div class="project-icon"><span class="iconify" data-icon="simple-icons:discord"></span></div>
+      <div class="project-title">Python Quest Discord Bot</div>
+      <p class="project-desc">
+        Bot de Discord desarrollado en Python como proyecto final del curso The Legend of Python. Permite interactuar mediante comandos, recibir retos de Python, ganar puntos, consultar perfil, lanzar un dado y ver un ranking básico.
+      </p>
+      <div class="project-tags">
+        <span class="tag">Python</span>
+        <span class="tag">Discord.py</span>
+        <span class="tag">Functions</span>
+        <span class="tag">Classes</span>
+        <span class="tag">Modules</span>
+      </div>
+      <a class="project-link" href="https://github.com/Ainnz05/python-quest-discord-bot" target="_blank">Ver repositorio →</a>
+    </div>
+
+    <div class="project-card">
+      <div class="project-icon"><span class="iconify" data-icon="mdi:gamepad-variant-outline"></span></div>
+      <div class="project-title">Rock Paper Scissors — Python</div>
+      <p class="project-desc">
+        Juego sencillo desarrollado en Python aplicando variables, condicionales, ciclos, entrada de usuario y lógica básica de programación.
+      </p>
+      <div class="project-tags">
+        <span class="tag">Python</span>
+        <span class="tag">Control flow</span>
+        <span class="tag">Loops</span>
+        <span class="tag">CLI</span>
+      </div>
+      <a class="project-link" href="https://github.com/Ainnz05/rock-paper-scissors-python" target="_blank">Ver repositorio →</a>
+    </div>
+
+    <div class="project-card">
+      <div class="project-icon"><span class="iconify" data-icon="mdi:test-tube"></span></div>
+      <div class="project-title">QA Testing Portfolio</div>
+      <p class="project-desc">
+        Espacio para documentar casos de prueba, reportes de bugs y ejemplos de validación funcional orientados a roles junior de QA.
+      </p>
+      <div class="project-tags">
+        <span class="tag">QA Manual</span>
+        <span class="tag">Test cases</span>
+        <span class="tag">Bug report</span>
+      </div>
+      <a class="project-link" href="#contact">Solicitar muestra →</a>
+    </div>
+
+  </div>
+</section>
 
   /* CONTACT */
   #contact { text-align: center; background: var(--surface); }
